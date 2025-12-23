@@ -109,7 +109,7 @@ img {
   gap: 1.5rem;
 }
 
-.section {
+section {
   padding-block: 5rem 1rem;
 }
 
@@ -370,12 +370,89 @@ img {
     flex-direction: row;
     column-gap: 5rem;
   }
+
+  .home-container {
+    width: initial;
+    padding-top: 3rem;
+  }
+
+  .home-perfil {
+    width: 600px;
+  }
+
+  .home-img .blob-animation {
+    width: 450px;
+    height: 450px;
+    bottom: 2rem;
+    filter: blur(50px);
+  }
+  .home-shadow {
+    width: 700px;
+    height: 700px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg hsla(240, 100%, 2%, 0) 60,
+      hsl(240, 100%, 2) 95%
+    );
+  }
+
+  .home-data {
+    position: absolute;
+    top: 14rem;
+    left: -17rem;
+    z-index: 2;
+  }
+
+  .home-info {
+    bottom: 44rem;
+    right: -35rem;
+    /* bottom: initial; */
+  }
+
+  .home-split {
+    font-size: var(--h2-font-size);
+  }
+
+  .home-professoin-1 {
+    font-size: var(--biggest-font-size);
+    text-align: initial;
+  }
+
+  .home-professoin-2 {
+    font-size: var(--biggest-font-size);
+    transform: translateY(-1.5rem);
+  }
+
+  .home-social {
+    bottom: 30rem;
+    row-gap: 1.5rem;
+    /* right: 31rem; */
+    left: -17rem;
+  }
+
+  .home-social-link {
+    font-size: 1.4rem;
+  }
+
+  .home-cv {
+    font-size: var(--normal-font-size);
+    rotate: 0deg;
+    left: 62rem;
+    bottom: 12rem;
+  }
 }
 
 @media screen and (min-width: 540px) {
   .home-container {
     width: 460px;
     margin-inline: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-container {
+    width: 600px;
   }
 }
 
