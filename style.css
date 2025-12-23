@@ -6,10 +6,10 @@
   --header-height: 3.5rem;
 
   --hue: 255;
-  --first-color: hsl(var(--hue), 60%, 64%);
-  --first-color-alt: hsl(var(--hue), 80%, 56%);
+  --first-color: #6dc3bb;
+  --first-color-alt: #00b7b5;
   --first-color-alt-2: hsl(var(--hue), 60%, 56%);
-  --first-color-light: hsl(var(--hue), 60%, 74%);
+  --first-color-light: #00b7b5;
   --title-color: hsl(240, 8%, 95%);
   --text-color: hsl(240, 8%, 70%);
   --text-color-light: hsl(240, 8%, 50%);
