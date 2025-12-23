@@ -75,6 +75,14 @@ button {
   cursor: pointer;
 }
 
+.button {
+  background-color: var(--body-color);
+  border: 3px solid var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 2rem;
+  box-shadow: 0 8px 32px hsla(210, 60%, 64%, 0.5), inset 9px -8px 30px #00b7b5;
+}
+
 h1,
 h2,
 h3,
@@ -349,8 +357,29 @@ section {
   color: var(--first-color);
 }
 
-.about-data p span {
+.about {
+  position: relative;
+}
+
+.about-container {
+  overflow-y: clip;
+  row-gap: 3rem;
+}
+
+.about-data .section-title {
+  margin-top: -1.5rem;
+  text-align: initial;
+}
+
+.about-data .about-description {
+  margin-bottom: 2rem;
+  font-size: var(--h2-font-size);
+  letter-spacing: 1px;
+}
+
+.about-data .about-description b {
   color: var(--first-color);
+  font-weight: var(--font-semi-bold);
 }
 
 /* =======Responsive section start======== */
