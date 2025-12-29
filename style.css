@@ -81,6 +81,22 @@ button {
   color: var(--title-color);
   padding: 1rem 2rem;
   box-shadow: 0 8px 32px hsla(210, 60%, 64%, 0.5), inset 9px -8px 30px #00b7b5;
+  font-family: var(--second-font);
+  font-weight: var(--font-semi-bold);
+  border-radius: 3rem;
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  transition: box-shadow 0.4s;
+}
+
+.button i {
+  font-weight: initial;
+  font-size: 1.2rem;
+}
+
+.button:hover {
+  color: var(--first-color-alt);
 }
 
 h1,
@@ -359,11 +375,25 @@ section {
 
 .about {
   position: relative;
+  margin-top: 15rem;
 }
 
 .about-container {
   overflow-y: clip;
   row-gap: 3rem;
+}
+
+.about-section-left {
+  display: flex;
+  justify-content: start;
+}
+
+.about-section-right {
+  display: flex;
+  justify-content: end;
+  padding-left: 37rem;
+  /* padding-bottom: 100rem; */
+  margin-top: -32rem;
 }
 
 .about-data .section-title {
@@ -381,6 +411,37 @@ section {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
 }
+
+.about-section-left .about-img {
+  position: relative;
+  justify-self: center;
+}
+
+.about-img .blob-animation:nth-child(1) {
+  top: 0.5rem;
+  left: 5.5rem;
+}
+
+.about-img .blob-animation:nth-child(2) {
+  top: 16.5rem;
+  left: 19rem;
+}
+
+.about-perfil {
+  width: 200px;
+}
+
+/* .about .about-shadow {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  bottom: 1rem;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    hsla(240, 100%, 2%, 0) 60 var(--body-color)
+  );
+} */
 
 /* =======Responsive section start======== */
 
@@ -418,6 +479,7 @@ section {
     bottom: 2rem;
     filter: blur(50px);
   }
+
   .home-shadow {
     width: 700px;
     height: 700px;
@@ -462,6 +524,43 @@ section {
     rotate: 0deg;
     left: 62rem;
     bottom: 12rem;
+  }
+
+  .about-conatiner {
+    grid-template-columns: repeat(2, 500px);
+    align-items: center;
+    column-gap: 5.5rem;
+    padding-top: 2rem;
+  }
+
+  .about-data,
+  .section-title {
+    text-align: initial;
+    z-index: 2;
+  }
+
+  .about-description {
+    margin-bottom: 3rem;
+  }
+
+  .about-perfil {
+    width: 500px;
+  }
+
+  .about-img .blob-animation {
+    width: 170px;
+    height: 150px;
+    filter: blur(50px);
+  }
+
+  .about-img .blob-animation:nth-child(1) {
+    left: 5rem;
+    top: 4rem;
+  }
+
+  .about-img .blob-animation:nth-child(2) {
+    right: 7rem;
+    bottom: 1rem;
   }
 }
 
