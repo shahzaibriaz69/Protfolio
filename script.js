@@ -23,3 +23,22 @@ animate(chars2, {
   delay: stagger(80),
   loop: true,
 });
+
+
+const swiperProjects = new Swiper('.projects-swiper', {
+  loop: true,
+  spaceBatween: 24,
+  slidesPerview: auto,
+  grabCursor: ture,
+  speed: 600,
+
+ 
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  autoPlay: {
+    delay:300,
+    disableOnInteraction: false,
+  }
+});
