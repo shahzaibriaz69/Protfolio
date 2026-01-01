@@ -194,8 +194,8 @@ section {
 }
 
 .blob {
-  width: 200px;
-  height: 250px;
+  width: 220px;
+  height: 310px;
   background: linear-gradient(
     180deg,
     var(--first-color) 0%,
@@ -581,6 +581,18 @@ section {
 .projects-swiper {
   margin-inline: initial;
   padding-bottom: 2rem;
+}
+
+.work .section-title {
+  text-align: center;
+}
+
+.work-tab {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--container-color);
+  padding: 1.25rem 2rem;
+  border-radius: 4rem;
 }
 
 /* =======Responsive section start======== */

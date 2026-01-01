@@ -31,12 +31,16 @@ let swiper = new Swiper(".projects-swiper", {
   loop: true,
   centeredSlides: false,
 
+  speed:3000,
+
   autoplay: {
     delay: 1500,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
 
   },
+
+  
 
   pagination: {
     el: ".swiper-pagination",
