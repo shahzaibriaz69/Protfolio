@@ -25,20 +25,21 @@ animate(chars2, {
 });
 
 
-const swiperProjects = new Swiper('.projects-swiper', {
+let swiper = new Swiper(".projects-swiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
   loop: true,
-  spaceBatween: 24,
-  slidesPerview: auto,
-  grabCursor: ture,
-  speed: 600,
+  centeredSlides: false,
 
- 
-  pagination: {
-    el: '.swiper-pagination',
+  autoplay: {
+    delay: 1500,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+
   },
 
-  autoPlay: {
-    delay:300,
-    disableOnInteraction: false,
-  }
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
