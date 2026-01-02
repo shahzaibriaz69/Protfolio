@@ -37,7 +37,7 @@
   --color-text: #000;
   --colog-bg: #000;
   --color-bg-accent: #00b7b5;
-  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --size: clamp(10rem, 1rem + 26vmin, 30rem);
   --gap: calc(var(--size) / 14);
   --duration: 60s;
   --scroll-start: 0;
@@ -735,6 +735,11 @@ section {
   box-shadow: 0 10px 15px -5px var(--first-color-alt-2);
 }
 
+.section-title {
+  text-align: center !important;
+  font-size: 3rem;
+}
+
 .marquee {
   display: flex;
   overflow: hidden;
@@ -752,7 +757,7 @@ section {
 }
 
 .marquee_group svg {
-  width: 100px;
+  width: 150px;
   height: auto;
   background-color: #00b7b5;
 }
@@ -771,7 +776,7 @@ section {
 .fa {
   font-size: 70px !important;
 }
-.marquee .fa {
+.marquee svg {
   display: grid;
   place-items: center;
   width: var(--size);
@@ -780,6 +785,7 @@ section {
   aspect-ratio: 19/9;
   padding: calc(var(--size) / 10);
   border-radius: 0.5rem;
+  color: black;
 }
 .wrapper {
   display: flex;
