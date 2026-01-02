@@ -8,8 +8,8 @@
   --hue: 255;
   --first-color: #6dc3bb;
   --first-color-alt: #00b7b5;
-  --first-color-alt-2: hsl(var(--hue), 60%, 56%);
-  --first-color-light: #00b7b5;
+  --first-color-alt-2: #00b7b5;
+  --first-color-light: #69f9f6;
   --title-color: hsl(240, 8%, 95%);
   --text-color: hsl(240, 8%, 70%);
   --text-color-light: hsl(240, 8%, 50%);
@@ -589,10 +589,103 @@ section {
 
 .work-tab {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: var(--container-color);
   padding: 1.25rem 2rem;
   border-radius: 4rem;
+}
+
+.work-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-family: var(--second-font);
+  column-gap: 0.25rem;
+  cursor: pointer;
+  transition: color 1.5s;
+}
+
+.work-button i {
+  font-size: 1rem;
+}
+
+.work-button:hover {
+  color: var(--first-color);
+}
+
+.work-area {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.work-content {
+  display: grid;
+  row-gap: 4rem;
+}
+
+.work-card {
+  display: grid;
+  row-gap: 2rem;
+}
+
+.work-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-title {
+  font-size: var(--h2-font-size);
+  margin-top: 0.5rem;
+}
+
+.work-subtiltle {
+  font-size: var(--normal-font-size);
+  font-family: var(--font-regular);
+  color: var(--first-color);
+  margin-top: 1rem;
+}
+
+.work-year {
+  font-size: var(--h1-font-size);
+}
+
+.work-description {
+  letter-spacing: 1;
+}
+
+.work-line {
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    hsla(var(--hue), 60%, 64%, 0),
+    var(--first-color-alt-2)
+  );
+  position: absolute;
+  bottom: -1px;
+  left: -60px;
+}
+
+.work-content {
+  display: none;
+}
+
+.work-content.work-active {
+  display: block;
+}
+
+.work-button {
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.work-button.work-active {
+  opacity: 1;
+  color: var(--first-color);
+  border-bottom: 2px solid var(--first-color);
 }
 
 /* =======Responsive section start======== */

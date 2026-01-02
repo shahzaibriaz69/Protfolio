@@ -47,3 +47,26 @@ let swiper = new Swiper(".projects-swiper", {
     clickable: true,
   },
 });
+
+
+const tabs = document.querySelectorAll(".work-button");
+  const contents = document.querySelectorAll(".work-content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const target = tab.getAttribute("data-target");
+
+      tabs.forEach((t) => t.classList.remove("work-active"));
+
+ 
+      contents.forEach((content) =>
+        content.classList.remove("work-active")
+      );
+
+      
+      tab.classList.add("work-active");
+
+      
+      document.getElementById(target).classList.add("work-active");
+    });
+  });
