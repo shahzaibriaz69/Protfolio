@@ -688,6 +688,35 @@ section {
   border-bottom: 2px solid var(--first-color);
 }
 
+.experience-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.experience-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--first-color); /* Optional color */
+}
+
+.experience-timer {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.time-box {
+  border: 2px solid var(--first-color-alt-2);
+  border-radius: 10px;
+  padding: 0.5rem 0.7rem;
+  min-width: 70px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
 /* =======Responsive section start======== */
 
 @media screen and (min-width: 1150px) {

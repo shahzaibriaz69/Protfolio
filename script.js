@@ -70,3 +70,35 @@ const tabs = document.querySelectorAll(".work-button");
       document.getElementById(target).classList.add("work-active");
     });
   });
+
+   const startDate = new Date("2025-08-01T00:00:00");
+
+  function updateExperienceTime() {
+    const now = new Date();
+    let diff = Math.floor((now - startDate) / 1000);
+
+    const years = Math.floor(diff / (365 * 24 * 60 * 60));
+    diff %= 365 * 24 * 60 * 60;
+
+    const months = Math.floor(diff / (30 * 24 * 60 * 60));
+    diff %= 30 * 24 * 60 * 60;
+
+    const days = Math.floor(diff / (24 * 60 * 60));
+    diff %= 24 * 60 * 60;
+
+    const hours = Math.floor(diff / 3600);
+    diff %= 3600;
+
+    const minutes = Math.floor(diff / 60);
+    const seconds = diff % 60;
+
+    document.getElementById("years").innerText = `${years}y`;
+    document.getElementById("months").innerText = `${months}m`;
+    document.getElementById("days").innerText = `${days}d`;
+    document.getElementById("hours").innerText = `${hours}h`;
+    document.getElementById("minutes").innerText = `${minutes}m`;
+    document.getElementById("seconds").innerText = `${seconds}s`;
+  }
+
+  updateExperienceTime();
+  setInterval(updateExperienceTime, 1000);
