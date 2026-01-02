@@ -697,7 +697,7 @@ section {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: var(--first-color); /* Optional color */
+  color: var(--title-color); /* Optional color */
 }
 
 .experience-timer {
