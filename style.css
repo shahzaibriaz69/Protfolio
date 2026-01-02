@@ -694,17 +694,25 @@ section {
 }
 
 .experience-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin: 5rem 0 3rem 0;
   color: var(--title-color); /* Optional color */
+}
+
+.experience-title span {
+  color: var(--first-color);
 }
 
 .experience-timer {
   display: flex;
   justify-content: center;
-  gap: 0.6rem;
+  gap: 1rem;
   flex-wrap: wrap;
+}
+
+.experience-timer span {
+  min-width: 10rem;
 }
 
 .time-box {
@@ -714,7 +722,8 @@ section {
   min-width: 70px;
   text-align: center;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 3rem;
+  box-shadow: 0 10px 15px -5px var(--first-color-alt-2);
 }
 
 /* =======Responsive section start======== */

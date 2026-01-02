@@ -73,32 +73,24 @@ const tabs = document.querySelectorAll(".work-button");
 
    const startDate = new Date("2025-08-01T00:00:00");
 
-  function updateExperienceTime() {
-    const now = new Date();
-    let diff = Math.floor((now - startDate) / 1000);
+function updateExperienceTime() {
+    let diff = Math.floor((new Date() - startDate) / 1000);
 
-    const years = Math.floor(diff / (365 * 24 * 60 * 60));
-    diff %= 365 * 24 * 60 * 60;
+    const units = [
+        { label: "years",   seconds: 31536000, suffix: "y" },
+        { label: "months",  seconds: 2592000,  suffix: "m" },
+        { label: "days",    seconds: 86400,    suffix: "d" },
+        { label: "hours",   seconds: 3600,     suffix: "h" },
+        { label: "minutes", seconds: 60,       suffix: "m" },
+        { label: "seconds", seconds: 1,        suffix: "s" }
+    ];
 
-    const months = Math.floor(diff / (30 * 24 * 60 * 60));
-    diff %= 30 * 24 * 60 * 60;
-
-    const days = Math.floor(diff / (24 * 60 * 60));
-    diff %= 24 * 60 * 60;
-
-    const hours = Math.floor(diff / 3600);
-    diff %= 3600;
-
-    const minutes = Math.floor(diff / 60);
-    const seconds = diff % 60;
-
-    document.getElementById("years").innerText = `${years}y`;
-    document.getElementById("months").innerText = `${months}m`;
-    document.getElementById("days").innerText = `${days}d`;
-    document.getElementById("hours").innerText = `${hours}h`;
-    document.getElementById("minutes").innerText = `${minutes}m`;
-    document.getElementById("seconds").innerText = `${seconds}s`;
-  }
+    units.forEach(({ label, seconds, suffix }) => {
+        const value = Math.floor(diff / seconds);
+        diff %= seconds;
+        document.getElementById(label).innerText = `${value}${suffix}`;
+    });
+}
 
   updateExperienceTime();
   setInterval(updateExperienceTime, 1000);
