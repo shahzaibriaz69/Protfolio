@@ -155,7 +155,8 @@ img {
 
 section {
   /* padding-block: 5rem 1rem; */
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  /* margin: 0 auto; */
 }
 
 .section-title {
@@ -478,6 +479,10 @@ section {
   );
 } */
 
+.projects {
+  margin-top: 25rem;
+}
+
 .projects .section-title {
   text-align: center;
   margin-left: 1.5rem;
@@ -594,6 +599,7 @@ section {
 
 .work .section-title {
   text-align: center;
+  margin-top: 17rem;
 }
 
 .work-tab {
@@ -733,6 +739,11 @@ section {
   font-weight: 600;
   font-size: 3rem;
   box-shadow: 0 10px 15px -5px var(--first-color-alt-2);
+  color: var(--first-color);
+}
+
+.skills {
+  margin-top: 15rem;
 }
 
 .section-title {
@@ -793,6 +804,89 @@ section {
   gap: var(--gap);
   margin: auto;
   max-width: 100vw;
+}
+
+.contact {
+  margin-top: 15rem;
+}
+
+.contact-container {
+  row-gap: 4rem;
+  /* padding-bottom: 2rem; */
+  /* margin-bottom: 10rem; */
+}
+
+.contact .section-title {
+  margin-bottom: 2rem;
+}
+
+.contact-data {
+  text-align: center;
+}
+
+.contact-description {
+  font-family: var(--second-font);
+  margin-bottom: 1.5rem;
+  font-size: var(--h2-font-size);
+}
+
+.contact-content {
+  row-gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.contact-info {
+  row-gap: 1rem;
+}
+
+.contact-title {
+  font-size: var(--h3-font-size);
+  color: var(--first-color);
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+
+.contact-address {
+  font-style: normal;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.contact-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 0.2rem;
+}
+
+.contact-links a {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  column-gap: 0.5rem;
+}
+
+.contact-links i {
+  color: var(--h1-font-size);
+  font-size: 1.5rem;
+}
+
+.contact-links a:hover {
+  transform: translateX(0.35rem);
+  color: var(--text-color);
 }
 
 /* =======Responsive section start======== */
@@ -883,6 +977,7 @@ section {
     align-items: center;
     column-gap: 5.5rem;
     padding-top: 2rem;
+    /* margin-top: 5rem; */
   }
 
   .about-data,

@@ -77,12 +77,12 @@ function updateExperienceTime() {
     let diff = Math.floor((new Date() - startDate) / 1000);
 
     const units = [
-        { label: "years",   seconds: 31536000, suffix: "y" },
-        { label: "months",  seconds: 2592000,  suffix: "m" },
-        { label: "days",    seconds: 86400,    suffix: "d" },
-        { label: "hours",   seconds: 3600,     suffix: "h" },
-        { label: "minutes", seconds: 60,       suffix: "m" },
-        { label: "seconds", seconds: 1,        suffix: "s" }
+        { label: "years",   seconds: 31536000, suffix: " y" },
+        { label: "months",  seconds: 2592000,  suffix: " m" },
+        { label: "days",    seconds: 86400,    suffix: " d" },
+        { label: "hours",   seconds: 3600,     suffix: " h" },
+        { label: "minutes", seconds: 60,       suffix: " m" },
+        { label: "seconds", seconds: 1,        suffix: " s" }
     ];
 
     units.forEach(({ label, seconds, suffix }) => {
@@ -94,3 +94,20 @@ function updateExperienceTime() {
 
   updateExperienceTime();
   setInterval(updateExperienceTime, 1000);
+
+
+const copyBtn = document.getElementById('contact-btn');
+
+copyBtn.addEventListener('click', () => {
+  const textToCopy = "shahzaibriaz69@gmail.com";
+
+  navigator.clipboard.writeText(textToCopy).then(() => {
+    copyBtn.innerHTML = 'Email Copied <i class="ri-check-line"></i>';
+
+    setTimeout(() => {
+      copyBtn.innerHTML = '<i class="ri-file-copy-line"></i> shahzaibriaz69@gmail.com';
+    }, 1000);
+  });
+});
+
+
