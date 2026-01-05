@@ -889,6 +889,31 @@ section {
   color: var(--text-color);
 }
 
+.footer {
+  position: relative;
+  padding-block: 4rem 2rem;
+  text-align: center;
+  row-gap: 1rem;
+  overflow: hidden;
+}
+
+.footer .blob-animation {
+  right: -3rem;
+  bottom: -3rem;
+}
+
+.footer-copy {
+  color: var(--title-color);
+}
+
+.footer-copy span {
+  color: var(--first-color);
+}
+
+.footer-year span {
+  font-size: var(--h3-font-size);
+}
+
 /* =======Responsive section start======== */
 
 @media screen and (min-width: 1150px) {
