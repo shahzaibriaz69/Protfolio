@@ -153,11 +153,11 @@ img {
   gap: 1.5rem;
 }
 
-section {
-  /* padding-block: 5rem 1rem; */
-  /* min-height: 100vh; */
-  /* margin: 0 auto; */
-}
+/* section {
+  padding-block: 5rem 1rem;
+  min-height: 100vh;
+  margin: 0 auto;
+} */
 
 .section-title {
   text-align: center;
@@ -908,6 +908,7 @@ section {
 
 .footer-copy span {
   color: var(--first-color);
+  font-size: var(--h3-font-size);
 }
 
 .footer-year span {
