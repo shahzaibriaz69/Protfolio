@@ -856,6 +856,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.contact-address:hover {
+  color: var(--first-color-alt);
+}
+
 .contact-social {
   display: flex;
   flex-direction: column;
@@ -907,7 +911,7 @@ img {
 }
 
 .footer-copy span {
-  color: var(--first-color);
+  color: var(--first-color-light);
   font-size: var(--h3-font-size);
 }
 
