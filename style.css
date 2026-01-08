@@ -456,7 +456,7 @@ img {
   letter-spacing: 1px;
 }
 
-.about-data .about-description b {
+.about-data .about-description span {
   color: var(--first-color);
   font-weight: var(--font-semi-bold);
 }
