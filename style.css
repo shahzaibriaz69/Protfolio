@@ -504,19 +504,23 @@ img {
   margin-left: 1.5rem;
 }
 
+.projects-container {
+  overflow: hidden;
+}
+
 .projects-card {
-  position: relative;
   background: var(--container-color);
   padding: 3rem;
-  overflow: hidden;
   border-radius: 3rem;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .projects-card .blob {
-  z-index: 0;
+  z-index: 1;
   bottom: 0;
   right: 0;
 }
@@ -537,10 +541,17 @@ img {
 
 .projects-img {
   width: 100%;
-  height: 298px;
-  object-fit: cover;
+  height: 300px;
+  overflow: hidden;
   border-radius: 2rem;
 }
+
+.projects-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .projects-number {
   display: flex;
   align-items: center;
@@ -1035,6 +1046,18 @@ img {
     width: 100px;
     height: 100px;
   }
+
+  .projects {
+    margin-top: 18rem;
+  }
+
+  .projects-card {
+    padding: 2.5rem;
+  }
+
+  .projects-img {
+    height: 280px;
+  }
 }
 
 /* ---- DESKTOP / LAPTOP 1024px ---- */
@@ -1137,6 +1160,22 @@ img {
     font-size: 1rem;
     line-height: 1.6;
   }
+
+  .projects {
+    margin-top: 14rem;
+  }
+
+  .projects-card {
+    padding: 2rem;
+  }
+
+  .projects-number h2 {
+    font-size: 3rem;
+  }
+
+  .projects-img {
+    height: 250px;
+  }
 }
 
 /* ---- TABLET 768px ---- */
@@ -1224,6 +1263,28 @@ img {
   .about-data .about-description {
     font-size: 0.95rem;
     line-height: 1.6;
+  }
+
+  .projects {
+    margin-top: 10rem;
+  }
+
+  .projects-card {
+    padding: 1.8rem;
+  }
+
+  .projects-number {
+    flex-direction: row;
+  }
+
+  .projects-img {
+    height: 220px;
+  }
+
+  .projects-button {
+    width: 42px;
+    height: 42px;
+    font-size: 1.6rem;
   }
 }
 
@@ -1353,6 +1414,33 @@ img {
   .about-data .about-description {
     font-size: 0.9rem;
     line-height: 1.5;
+  }
+
+  .projects {
+    margin-top: 8rem;
+  }
+
+  .projects-card {
+    padding: 1.5rem;
+    border-radius: 2rem;
+  }
+
+  .projects-number h2 {
+    font-size: 2.2rem;
+  }
+
+  .projects-number h3 {
+    font-size: 1rem;
+  }
+
+  .projects-img {
+    height: 180px;
+  }
+
+  .projects-button {
+    width: 38px;
+    height: 38px;
+    font-size: 1.4rem;
   }
 }
 

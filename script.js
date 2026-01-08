@@ -46,6 +46,13 @@ let swiper = new Swiper(".projects-swiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
+
+   breakpoints: {
+    425: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+    1400: { slidesPerView: 3 },
+  },
 });
 
 
