@@ -840,9 +840,9 @@ img {
 }
 
 .contact-container {
-  row-gap: 4rem;
-  /* padding-bottom: 2rem; */
-  /* margin-bottom: 10rem; */
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
 }
 
 .contact .section-title {
@@ -860,10 +860,10 @@ img {
 }
 
 .contact-content {
-  row-gap: 3rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 7rem;
+  /* gap: 3rem; */
+  margin-top: 4rem;
 }
 
 .contact-info {
@@ -893,6 +893,13 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.contact-write {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .contact-links {
@@ -1060,6 +1067,14 @@ img {
   .projects-img {
     height: 280px;
   }
+
+  .contact-container {
+    max-width: 1100px;
+  }
+
+  .contact-description {
+    font-size: 1.8rem;
+  }
 }
 
 /* ---- DESKTOP / LAPTOP 1024px ---- */
@@ -1178,6 +1193,19 @@ img {
   .projects-img {
     height: 250px;
   }
+
+  .contact-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .contact-write {
+    grid-column: span 2;
+  }
+
+  .contact-description {
+    font-size: 1.5rem;
+  }
 }
 
 /* ---- TABLET 768px ---- */
@@ -1287,6 +1315,26 @@ img {
     width: 42px;
     height: 42px;
     font-size: 1.6rem;
+  }
+
+  .contact {
+    margin-top: 8rem;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .contact-title,
+  .contact-address {
+    text-align: center;
+  }
+
+  .contact-links a {
+    width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -1444,8 +1492,45 @@ img {
     height: 38px;
     font-size: 1.4rem;
   }
-}
 
+  .contact {
+    margin-top: 6rem;
+  }
+
+  .contact-content {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .contact-info,
+  .contact-social,
+  .contact-write {
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-links {
+    width: 100%;
+    align-items: center;
+  }
+
+  .contact-links a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--title-color);
+  }
+
+  .contact-links a i {
+    font-size: 1.2rem;
+    display: inline-block;
+    transform: rotate(0deg);
+  }
+}
 /* @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
