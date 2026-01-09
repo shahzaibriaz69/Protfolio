@@ -819,10 +819,12 @@ img {
   place-items: center;
   width: var(--size);
   fill: var(--color-text);
-  background: var(--color-bg-accent);
+  background: transparent;
+  box-shadow: 2px 2px 20px hsla(210, 60%, 64%, 0.5), inset 9px -8px 30px #00b7b5;
   aspect-ratio: 19/9;
   padding: calc(var(--size) / 10);
   border-radius: 0.5rem;
+  border: 2px solid var(--color-bg-accent);
   color: black;
 }
 .wrapper {
