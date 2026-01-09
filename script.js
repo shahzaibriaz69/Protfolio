@@ -48,6 +48,7 @@ let swiper = new Swiper(".projects-swiper", {
   },
 
    breakpoints: {
+    375: { slidesPerView: 1 },
     430: { slidesPerView: 1 },
     768: { slidesPerView: 2 },
     1024: { slidesPerView: 3 },
