@@ -587,7 +587,7 @@ img {
 
 .swiper-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 2fr);
+  grid-template-columns: repeat(6, 2fr);
 }
 
 .projects-button {
