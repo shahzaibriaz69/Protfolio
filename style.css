@@ -100,7 +100,9 @@ button {
   border: 3px solid var(--first-color);
   color: var(--title-color);
   padding: 1rem 2rem;
-  box-shadow: 0 8px 32px hsla(210, 60%, 64%, 0.5), inset 9px -8px 30px #00b7b5;
+  box-shadow:
+    0 8px 32px hsla(210, 60%, 64%, 0.5),
+    inset 9px -8px 30px #00b7b5;
   font-family: var(--second-font);
   font-weight: var(--font-semi-bold);
   border-radius: 3rem;
@@ -266,13 +268,17 @@ img {
 .nav-link {
   color: var(--text-color);
   font: var(--font-semi-bold) var(--small-font-size) var(--second-font);
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 .nav-link:hover {
   color: var(--first-color);
   text-shadow: 0 8px 16px var(--first-color);
-  transition: color 0.4s, text-shadow 0.4s;
+  transition:
+    color 0.4s,
+    text-shadow 0.4s;
 }
 
 .home-container {
@@ -587,7 +593,7 @@ img {
 
 .swiper-wrapper {
   display: grid;
-  grid-template-columns: repeat(6, 2fr);
+  grid-template-columns: repeat(8, 2fr);
 }
 
 .projects-button {
@@ -819,7 +825,9 @@ img {
   width: var(--size);
   fill: var(--color-text);
   background: transparent;
-  box-shadow: 2px 2px 20px hsla(210, 60%, 64%, 0.5), inset 9px -8px 30px #00b7b5;
+  box-shadow:
+    2px 2px 20px hsla(210, 60%, 64%, 0.5),
+    inset 9px -8px 30px #00b7b5;
   aspect-ratio: 19/9;
   padding: calc(var(--size) / 10);
   border-radius: 0.5rem;
