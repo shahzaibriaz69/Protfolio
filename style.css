@@ -860,6 +860,8 @@ img {
   text-align: center;
 }
 
+
+
 .contact-description {
   font-family: var(--second-font);
   margin-bottom: 1.5rem;
@@ -875,6 +877,53 @@ img {
 
 .contact-info {
   row-gap: 1rem;
+}
+
+.contact-form-container {
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+    /* border: 2px solid var(--first-color); */
+}
+
+.contact-form {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.form-group {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05); /* Light glass effect */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: var(--first-color); /* Aapka primary color */
+}
+
+.form-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-submit-btn {
+   margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+    border: none;
+    width: 50%;
 }
 
 .contact-title {
