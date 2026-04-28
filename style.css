@@ -1451,7 +1451,7 @@ img {
   }
 
   .container {
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
   }
 
   .nav-link {
@@ -1473,7 +1473,7 @@ img {
   }
 
   .home-social {
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
 
   .home-img .blob-animation {
@@ -1518,8 +1518,8 @@ img {
   }
 
   .about-data .about-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.81rem;
+    line-height: 1.8;
   }
 
   .projects {
