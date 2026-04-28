@@ -883,7 +883,6 @@ img {
     align-items: center;
     margin: 0 auto;
     width: 500px;
-    /* border: 2px solid var(--first-color); */
 }
 
 .contact-form {
@@ -898,7 +897,7 @@ img {
 .form-input {
     width: 100%;
     padding: 1rem;
-    background: rgba(255, 255, 255, 0.05); /* Light glass effect */
+    background: rgba(255, 255, 255, 0.05); 
     border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 0.75rem;
     color: #fff;
@@ -907,7 +906,7 @@ img {
 }
 
 .form-input:focus {
-    border-color: var(--first-color); /* Aapka primary color */
+    border-color: var(--first-color); 
 }
 
 .form-textarea {
