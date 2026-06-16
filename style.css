@@ -108,8 +108,9 @@ button {
   border-radius: 3rem;
   display: inline-flex;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 1.5rem;
   transition: box-shadow 0.4s;
+  margin-left: 0.5rem;
 }
 
 .button i {
@@ -180,11 +181,9 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  background: linear-gradient(
-    180deg,
-    var(--body-color) 60%,
-    hsla(240, 100%, 2%, 0) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--body-color) 60%,
+      hsla(240, 100%, 2%, 0) 100%);
   z-index: var(--z-fixed);
   padding-top: 10px;
 }
@@ -192,11 +191,9 @@ img {
 .blob-animation {
   width: 115px;
   height: 110px;
-  background: linear-gradient(
-    180deg,
-    var(--first-color-alt) 20%,
-    var(--first-color-light) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--first-color-alt) 20%,
+      var(--first-color-light) 100%);
   border-radius: 50%;
   position: absolute;
   filter: blur(20px);
@@ -207,11 +204,9 @@ img {
 .blob {
   width: 220px;
   height: 310px;
-  background: linear-gradient(
-    180deg,
-    var(--first-color) 0%,
-    var(--first-color-alt) 100%
-  );
+  background: linear-gradient(180deg,
+      var(--first-color) 0%,
+      var(--first-color-alt) 100%);
 
   border-radius: 50%;
   filter: blur(50px);
@@ -223,6 +218,7 @@ img {
   0% {
     transform: rotate(0);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -310,9 +306,11 @@ img {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 25%; /* Adjust this % to control how high the fade goes */
+  height: 25%;
+  /* Adjust this % to control how high the fade goes */
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  pointer-events: none; /* Allows clicking 'through' the fade to the image */
+  pointer-events: none;
+  /* Allows clicking 'through' the fade to the image */
 }
 
 .home-img .blob-animation {
@@ -331,10 +329,8 @@ img {
   height: 375px;
   bottom: 1rem;
   z-index: 1;
-  background: linear-gradient(
-    180deg hsla(240, 100%, 2%, 0) 60%,
-    hsla(240, 100%, 2%) 85%
-  );
+  background: linear-gradient(180deg hsla(240, 100%, 2%, 0) 60%,
+      hsla(240, 100%, 2%) 85%);
 }
 
 .home-left {
@@ -385,11 +381,9 @@ img {
   content: "";
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    0deg,
-    hsla(0, 0%, 0%, 0.8) 10%,
-    hsla(0, 0%, 0%, 0) 60%
-  );
+  background: linear-gradient(0deg,
+      hsla(0, 0%, 0%, 0.8) 10%,
+      hsla(0, 0%, 0%, 0) 60%);
   position: absolute;
   top: 0;
   left: 0;
@@ -398,9 +392,11 @@ img {
 .home-professoin-2 {
   transform: translateY(-1rem);
 }
+
 .home-social-link {
   display: inline-flex;
 }
+
 .home-social-link a {
   font-size: 1.25rem;
   color: var(--title-color);
@@ -631,7 +627,7 @@ img {
 
 .work .section-title {
   text-align: center;
-  margin-top: 17rem;
+  margin-top: 10rem;
 }
 
 .work-tab {
@@ -675,6 +671,7 @@ img {
 .work-card {
   display: grid;
   row-gap: 2rem;
+  padding: 0.2rem;
 }
 
 .work-data {
@@ -705,11 +702,9 @@ img {
 .work-line {
   width: 4px;
   height: 100%;
-  background: linear-gradient(
-    180deg,
-    hsla(var(--hue), 60%, 64%, 0),
-    var(--first-color-alt-2)
-  );
+  background: linear-gradient(180deg,
+      hsla(var(--hue), 60%, 64%, 0),
+      var(--first-color-alt-2));
   position: absolute;
   bottom: -1px;
   left: -60px;
@@ -744,7 +739,8 @@ img {
   font-size: 3rem;
   font-weight: bold;
   margin: 5rem 0 3rem 0;
-  color: var(--title-color); /* Optional color */
+  color: var(--title-color);
+  /* Optional color */
 }
 
 .experience-title span {
@@ -775,7 +771,7 @@ img {
 }
 
 .skills {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 
 .section-title {
@@ -789,6 +785,7 @@ img {
   user-select: none;
   gap: var(--gap);
 }
+
 .marquee_group {
   flex-shrink: 0;
   display: flex;
@@ -804,21 +801,26 @@ img {
   height: auto;
   background-color: #00b7b5;
 }
+
 .marquee-reverse .marquee_group {
   animation-direction: reverse;
   animation-delay: -3s;
 }
+
 @keyframes scroll-x {
   from {
     transform: translateX(var(--scroll-start));
   }
+
   to {
     transform: translateX(var(--scroll-end));
   }
 }
+
 .fa {
   font-size: 70px !important;
 }
+
 .marquee svg {
   display: grid;
   place-items: center;
@@ -834,6 +836,7 @@ img {
   border: 2px solid var(--color-bg-accent);
   color: black;
 }
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -880,49 +883,49 @@ img {
 }
 
 .contact-form-container {
-    align-items: center;
-    margin: 0 auto;
-    width: 500px;
+  align-items: center;
+  margin: 0 auto;
+  width: 500px;
 }
 
 .contact-form {
-    display: grid;
-    gap: 1.25rem;
+  display: grid;
+  gap: 1.25rem;
 }
 
 .form-group {
-    width: 100%;
+  width: 100%;
 }
 
 .form-input {
-    width: 100%;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.05); 
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    border-radius: 0.75rem;
-    color: #fff;
-    outline: none;
-    transition: 0.3s;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  color: #fff;
+  outline: none;
+  transition: 0.3s;
 }
 
 .form-input:focus {
-    border-color: var(--first-color); 
+  border-color: var(--first-color);
 }
 
 .form-textarea {
-    height: 150px;
-    resize: none;
+  height: 150px;
+  resize: none;
 }
 
 .form-submit-btn {
-   margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: 0.5rem;
-    cursor: pointer;
-    border: none;
-    width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  cursor: pointer;
+  border: none;
+  width: 50%;
 }
 
 .contact-title {
@@ -1071,6 +1074,7 @@ img {
     height: 650px;
     bottom: 2rem;
   }
+
   .home-img img {
     width: 660px;
   }
@@ -1200,8 +1204,10 @@ img {
     height: 450px;
     bottom: 3rem;
   }
+
   .home-img img {
-    width: 460px;
+    width: 380px;
+    margin-left: 0.5rem;
   }
 
   .home-social-link a {
@@ -1417,6 +1423,8 @@ img {
   .home-left,
   .home-right {
     gap: 3rem;
+    align-items: center;
+    margin-right: 2rem;
   }
 
   .home-data {
@@ -1479,7 +1487,7 @@ img {
   .home-img .blob-animation {
     width: 370px;
     height: 370px;
-    left: 1rem;
+    left: 2rem;
   }
 
   .about {
@@ -1493,13 +1501,15 @@ img {
 
   /* ORDER CHANGE */
   .about-section-right {
-    order: 1; /* content first */
+    order: 1;
+    /* content first */
     justify-self: center;
     text-align: center;
   }
 
   .about-section-left {
-    order: 2; /* image second */
+    order: 2;
+    /* image second */
     justify-self: center;
   }
 
@@ -1518,8 +1528,9 @@ img {
   }
 
   .about-data .about-description {
-    font-size: 0.81rem;
+    font-size: 0.8rem;
     line-height: 1.8;
+    padding: 0.5rem;
   }
 
   .projects {
@@ -1587,6 +1598,7 @@ img {
     transform: rotate(0deg);
   }
 }
+
 /* @media screen and (min-width: 1150px) {
   .container {
     margin-inline: auto;
